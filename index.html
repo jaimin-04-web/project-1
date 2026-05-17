@@ -3809,7 +3809,7 @@ document.getElementById('logo2Text').style.display = 'none';` : ''}`
     html = html.replace(/const ADMIN_PASS\s*=\s*".*?";/g, 'const ADMIN_PASS = "";');
 
     // Remove admin panel HTML block
-    html = html.replace(/<div class="admin-panel-wrap"[\s\S]*?<\/div>\s*<!-- /adminPanelWrap -->,
+    html = html.replace(/<div class="admin-panel-wrap"[\s\S]*?<\/div>\s*<!-- \/adminPanelWrap -->/,
       '<!-- Admin panel removed in public version -->');
 
     // Remove login modal
